@@ -26,6 +26,12 @@ namespace TestAppRotation
         public MainPage()
         {
             this.InitializeComponent();
+            DisplayInformation.AutoRotationPreferences = DisplayOrientations.Landscape;
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            DisplayInformation.AutoRotationPreferences = DisplayOrientations.Landscape;
         }
     }
 }
