@@ -33,5 +33,10 @@ namespace TestAppRotation
         {
             DisplayInformation.AutoRotationPreferences = DisplayOrientations.Landscape;
         }
+
+        private void Grid_Loaded(object sender, RoutedEventArgs e)
+        {
+            DisplayInformation.AutoRotationPreferences = DisplayOrientations.Landscape;
+        }
     }
 }
